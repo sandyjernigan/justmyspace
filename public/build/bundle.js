@@ -310,10 +310,12 @@ var app = (function () {
     	let t1;
     	let t2;
     	let t3;
-    	let p;
+    	let p0;
     	let t4;
     	let a;
     	let t6;
+    	let t7;
+    	let p1;
 
     	const block = {
     		c: function create() {
@@ -323,16 +325,20 @@ var app = (function () {
     			t1 = text(/*name*/ ctx[0]);
     			t2 = text("!");
     			t3 = space();
-    			p = element("p");
+    			p0 = element("p");
     			t4 = text("Visit the ");
     			a = element("a");
     			a.textContent = "Svelte tutorial";
     			t6 = text(" to learn how to build Svelte apps.");
+    			t7 = space();
+    			p1 = element("p");
+    			p1.textContent = "Currently working on updateing this site.";
     			attr_dev(h1, "class", "svelte-5c1cmj");
     			add_location(h1, file, 5, 1, 51);
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
     			add_location(a, file, 6, 14, 89);
-    			add_location(p, file, 6, 1, 76);
+    			add_location(p0, file, 6, 1, 76);
+    			add_location(p1, file, 8, 1, 190);
     			attr_dev(main, "class", "svelte-5c1cmj");
     			add_location(main, file, 4, 0, 42);
     		},
@@ -346,10 +352,12 @@ var app = (function () {
     			append_dev(h1, t1);
     			append_dev(h1, t2);
     			append_dev(main, t3);
-    			append_dev(main, p);
-    			append_dev(p, t4);
-    			append_dev(p, a);
-    			append_dev(p, t6);
+    			append_dev(main, p0);
+    			append_dev(p0, t4);
+    			append_dev(p0, a);
+    			append_dev(p0, t6);
+    			append_dev(main, t7);
+    			append_dev(main, p1);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*name*/ 1) set_data_dev(t1, /*name*/ ctx[0]);
