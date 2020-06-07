@@ -7,6 +7,8 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 
 	<p>Currently working on updateing this site.</p>
+
+	<p>This site will include projects I have worked on. It it Just My Space.</p>
 </main>
 
 <style>

@@ -316,6 +316,8 @@ var app = (function () {
     	let t6;
     	let t7;
     	let p1;
+    	let t9;
+    	let p2;
 
     	const block = {
     		c: function create() {
@@ -333,12 +335,16 @@ var app = (function () {
     			t7 = space();
     			p1 = element("p");
     			p1.textContent = "Currently working on updateing this site.";
+    			t9 = space();
+    			p2 = element("p");
+    			p2.textContent = "This site will include projects I have worked on. It it Just My Space.";
     			attr_dev(h1, "class", "svelte-5c1cmj");
     			add_location(h1, file, 5, 1, 51);
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
     			add_location(a, file, 6, 14, 89);
     			add_location(p0, file, 6, 1, 76);
     			add_location(p1, file, 8, 1, 190);
+    			add_location(p2, file, 10, 1, 243);
     			attr_dev(main, "class", "svelte-5c1cmj");
     			add_location(main, file, 4, 0, 42);
     		},
@@ -358,6 +364,8 @@ var app = (function () {
     			append_dev(p0, t6);
     			append_dev(main, t7);
     			append_dev(main, p1);
+    			append_dev(main, t9);
+    			append_dev(main, p2);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*name*/ 1) set_data_dev(t1, /*name*/ ctx[0]);
